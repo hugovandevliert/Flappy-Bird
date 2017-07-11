@@ -3,10 +3,10 @@ function Pipe() {
   this.x = width;
   this.width = floor(random(width / 7, width / 4));
   do {
-    this.top = floor(random(0, 400));
-    this.bottom = floor(random(100, 500));
+    this.top = floor(random(25, height - 100));
+    this.bottom = floor(random(100, height - 25));
   }
-  while (height - this.bottom - this.top < 100 || height - this.bottom - this.top > 300);
+  while (height - this.bottom - this.top < 100 || height - this.bottom - this.top > 350);
 
   this.update = function() {
     this.x -= this.speed;

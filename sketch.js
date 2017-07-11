@@ -4,7 +4,7 @@ var score;
 
 function setup() {
   createCanvas(500, 500);
-  bird = new Bird(75, height / 2, 25);
+  bird = new Bird(75, height / 2, height / 20);
   pipes = [];
   score = 0;
   var restartGame = createButton("Restart");
@@ -64,7 +64,7 @@ function draw() {
 }
 
 function restart() {
-  bird = new Bird(75, height / 2, 25);
+  bird = new Bird(75, height / 2, height / 20);
   pipes = [];
   score = 0;
   loop();

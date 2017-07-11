@@ -21,7 +21,7 @@ function Bird(x, y, s) {
 
   this.collision = function(pipe) {
     if (this.x + this.r >= pipe.x && this.x + this.r <= pipe.x + pipe.width) {
-      if (this.y - this.r <= pipe.top || this.y - this.r >= height - pipe.bottom) {
+      if (this.y - this.r <= pipe.top || this.y + this.r >= height - pipe.bottom) {
         return true;
       }
     }
